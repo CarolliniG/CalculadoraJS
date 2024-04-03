@@ -1,5 +1,6 @@
 const resultElement = document.querySelector(".result");
 const buttons = document.querySelectorAll(".buttons button");
+const resultButton = document.querySelector(".button-result");
 
 let currentNumber = "";
 let firstOperand = null;
@@ -84,7 +85,7 @@ buttons.forEach(button => {
         // Implement logic to handle positive/negative toggle
         break;
       case "%":
-        // Implement logic for percentage calculation
+        answer = (firstOperand * secondOperand) / 100;
         break;
       case "=":
         calculate();
@@ -98,3 +99,5 @@ buttons.forEach(button => {
     }
   });
 });
+
+
