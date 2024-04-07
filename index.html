@@ -26,7 +26,7 @@
             <button class="bg-ligth-gray" onclick="insert('6')">6</button>
             <button class="bg-orange">-</button>
 
-            <button class="bg-ligth-gray" onclick="indert('1')">1</button>
+            <button class="bg-ligth-gray" onclick="insert('1')">1</button>
             <button class="bg-ligth-gray" onclick="insert('2')">2</button>
             <button class="bg-ligth-gray" onclick="insert('3')">3</button>
             <button class="bg-orange">+</button>
@@ -38,6 +38,12 @@
     </div>
 
 
-    <script src="script.js"></script>
+    <script src="script.js">
+        function insert(num)
+        {
+            document.getElementByClassName('result').innerHTML = num;
+                
+        }
+    </script>
 </body>
 </html>
